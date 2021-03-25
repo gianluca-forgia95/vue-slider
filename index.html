@@ -26,7 +26,7 @@
           <img :src="images[imgIndex]" alt="">
         </div>
         <div class="bullets">
-          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle" v-for="img in images"></i>
         </div>
         <div class="arrow-next">
           <i @click="nextImg" class="fas fa-chevron-right"></i>
