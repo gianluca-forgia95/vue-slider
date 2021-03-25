@@ -10,8 +10,14 @@ data: {
     imgIndex: 0
     },
    methods: {
-    nexImg: function() {
+    nextImg: function() {
       this.imgIndex++;
+      if (this.imgIndex == 4 ) {
+         this.imgIndex = 0;
+      }
+    },
+    prevImg: function() {
+
     }
    }
 
