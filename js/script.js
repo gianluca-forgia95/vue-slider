@@ -5,7 +5,7 @@ data: {
     "img/verdone.jpg",
     "img/proietti.jpg",
     "img/sordi.jpg",
-    "img/desica.jpg",
+    "img/desica.jpg"
     ],
     imgIndex: 0
     },
@@ -17,7 +17,10 @@ data: {
       }
     },
     prevImg: function() {
-
+      this.imgIndex--;
+      if (this.imgIndex < 0 ) {
+         this.imgIndex = this.images.length - 1 ;
+      }
     }
    }
 
