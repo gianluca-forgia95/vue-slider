@@ -8,11 +8,11 @@ data: {
     "img/desica.jpg"
     ],
     imgIndex: 0
-    },
+   },
    methods: {
     nextImg: function() {
       this.imgIndex++;
-      if (this.imgIndex == 4 ) {
+      if (this.imgIndex == this.images.length ) {
          this.imgIndex = 0;
       }
     },
@@ -21,7 +21,8 @@ data: {
       if (this.imgIndex < 0 ) {
          this.imgIndex = this.images.length - 1 ;
       }
-    }
+    },
+
    }
 
 });

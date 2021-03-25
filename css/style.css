@@ -3,13 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
+h1 {
+  font-family: 'Fredoka One', cursive;
+  color: #174186;
+}
+.title {
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+}
 .carousel-wrapper {
   max-width: 1100px;
   margin: 0 auto;
   height: 100vh;
   display: flex;
+  background-color: #FFF3C4;
 }
 .carousel {
   display: flex;
@@ -21,20 +29,33 @@
   position: relative;
 }
 .carousel-img img {
-  max-width: 600px;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 .arrow-prev i , .arrow-next i {
   font-weight: bold;
   font-size: 50px;
   cursor: pointer;
+  color: #174186;
 }
 .bullets {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 40%;
+  text-align: center;
+  color: #fff;
+}
+.bullets i {
+  padding: 10px;
+
 }
 .active {
   color: lime;
+}
+.show {
+  display: none;
 }
 .bullets i {
   cursor: pointer;
