@@ -7,7 +7,8 @@ data: {
     "img/sordi.jpg",
     "img/desica.jpg"
     ],
-    imgIndex: 0
+    imgIndex: 0,
+  
    },
    methods: {
     nextImg: function() {

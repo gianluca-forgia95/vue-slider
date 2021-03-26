@@ -5,7 +5,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <!-- 7Google Font -->
+    <!-- /Google Font -->
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- /FontAwesome -->
@@ -19,33 +19,43 @@
   </head>
   <body>
 
-
+<!-- Root VueJs -->
    <div id="root">
+     <!-- Title -->
      <div class="title">
        <h1>Un Carousel 'Delicatissimo'</h1>
      </div>
+    <!-- /Title -->
+  <!-- Carousel container -->
      <div class="carousel-wrapper">
 
        <div class="carousel">
+     <!-- Prev Chevron -->
         <div class="arrow-prev">
           <i @click="prevImg" class="fas fa-chevron-left"></i>
         </div>
+    <!-- /Prev Chevron -->
+    <!-- Carousel Img -->
         <div class="carousel-img">
           <img :src="images[imgIndex]" alt="">
-
         </div>
+    <!-- /Carousel Img -->
+      <!-- Bullets -->
         <div class="bullets">
           <i class="fas fa-circle" v-for="(img, index) in images" :class="imgIndex == index ? 'active': '' " @click= 'imgIndex = index' ></i>
         </div>
+      <!-- /Bullets -->
+     <!-- Next Chevron -->
         <div class="arrow-next">
           <i @click="nextImg" class="fas fa-chevron-right"></i>
         </div>
+     <!-- 7Next Chevron -->
       </div>
     </div>
-
+<!-- /Carousel container -->
 
    </div>
-
+<!-- /Root VueJs -->
 
 
 
