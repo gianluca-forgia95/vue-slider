@@ -37,7 +37,8 @@
     <!-- /Prev Chevron -->
     <!-- Carousel Img -->
         <div class="carousel-img">
-          <img :src="images[imgIndex]" alt="">
+          <h3>{{images[imgIndex].descr}}</h3>
+          <img :src="images[imgIndex].img" alt="">
         </div>
     <!-- /Carousel Img -->
       <!-- Bullets -->
@@ -49,7 +50,7 @@
         <div class="arrow-next">
           <i @click="nextImg" class="fas fa-chevron-right"></i>
         </div>
-     <!-- 7Next Chevron -->
+     <!-- /Next Chevron -->
       </div>
     </div>
 <!-- /Carousel container -->

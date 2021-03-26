@@ -3,8 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
+body {
   font-family: 'Fredoka One', cursive;
+}
+h1 {
   color: #174186;
 }
 .title {
@@ -28,6 +30,15 @@ h1 {
   height: 400px;
   margin: auto;
   position: relative;
+}
+.carousel-img {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.carousel-img h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #174186;
 }
 .carousel-img img {
   width: 500px;

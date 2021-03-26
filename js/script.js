@@ -2,13 +2,27 @@ var root = new Vue({
 el: '#root',
 data: {
     images: [
-    "img/verdone.jpg",
-    "img/proietti.jpg",
-    "img/sordi.jpg",
-    "img/desica.jpg"
+      {
+        img: "img/verdone.jpg",
+        descr:'Carlo Verdone nel film Borotalco'
+      },
+     {
+       img: "img/proietti.jpg",
+       descr:'Gigi Proietti, Mandrake in "Febbre da Cavallo"'
+     },
+     {
+       img: "img/desica.jpg",
+       descr:'Christian De Sica in "Fratelli d Italia"'
+     },
+     {
+       img: "img/sordi.jpg",
+       descr:'Alberto Sordi nella sua villa a Roma'
+     },
+
+
     ],
     imgIndex: 0,
-  
+
    },
    methods: {
     nextImg: function() {
